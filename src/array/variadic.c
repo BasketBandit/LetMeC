@@ -13,6 +13,5 @@ void variadic(int nums, ...) {
     }
 
     va_end(list);
-
     printf("%d", total);
 }
