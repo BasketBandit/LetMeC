@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-
-void variadic(int nums, ...); // function prototype
+#include "variadic.h"
 
 void variadic(int nums, ...) {
     va_list list;
@@ -13,5 +12,6 @@ void variadic(int nums, ...) {
     }
 
     va_end(list);
-    printf("%d", total);
+    printf("Total: %d\n", total);
+    printf("Average: %f\n", (total + .0) / (nums + .0));
 }

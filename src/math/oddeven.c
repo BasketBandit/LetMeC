@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-void oddeven(); // function prototype
+#include "oddeven.h"
 
 void oddeven() {
     int input = 0;
