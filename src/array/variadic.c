@@ -12,6 +12,6 @@ void variadic(int nums, ...) {
     }
 
     va_end(list);
-    printf("Total: %d\n", total);
+    printf("Total: %d, ", total);
     printf("Average: %f\n", (total + .0) / (nums + .0));
 }

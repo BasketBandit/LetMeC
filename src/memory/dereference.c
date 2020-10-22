@@ -5,7 +5,7 @@ int valX;
 int* refX;
 
 void dereference() {
-    printf("Enter value to be stored: ");
+    printf("Enter value to be stored:\n");
     scanf("%d", &valX);
     refX = &valX;
     printf("valX: %d, refX: %d\n", valX, *refX);
@@ -13,7 +13,7 @@ void dereference() {
 }
 
 void dereferenceValue() {
-    printf("Enter replacement value: ");
+    printf("Enter replacement value:\n");
     scanf("%d", *&refX);
     printf("valX: %d, refX %d\n", valX, *refX);
 }
