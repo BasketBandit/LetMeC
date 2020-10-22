@@ -3,4 +3,4 @@ project(LetMeC C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(LetMeC src/math/oddeven.c src/array/variadic.c src/main.c src/array/variadic.h src/math/oddeven.h)
+add_executable(LetMeC src/math/oddeven.c src/array/variadic.c src/main.c src/array/variadic.h src/math/oddeven.h src/struct/struct.c src/struct/struct.h)
