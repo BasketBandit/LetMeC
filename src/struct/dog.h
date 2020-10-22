@@ -1,6 +1,13 @@
 #ifndef LETMEC_DOG_H
 #define LETMEC_DOG_H
 
+struct dog {
+    char* name;
+    int age;
+    char* type;
+    char* colour;
+};
+
 typedef struct dog *Dog;
 
 Dog new_Dog(char* name, int age, char* type, char* colour);

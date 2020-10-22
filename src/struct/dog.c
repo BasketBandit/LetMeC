@@ -2,13 +2,6 @@
 #include <stdio.h>
 #include "dog.h"
 
-struct dog {
-    char* name;
-    int age;
-    char* type;
-    char* colour;
-};
-
 Dog new_Dog(char* name, int age, char* type, char* colour) {
     Dog this = (Dog)malloc(sizeof(struct dog)); // malloc sizeof(struct dog) because Dog* is a pointer reference. (gives us < 10 bytes)
     this->name = name;
