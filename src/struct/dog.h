@@ -17,6 +17,4 @@ char* Dog_getType(Dog this);
 char* Dog_getColour(Dog this);
 void Dog_giveAway(Dog this);
 
-void newDogScan();
-
 #endif //LETMEC_DOG_H
