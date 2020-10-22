@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "struct.h"
 
-void printLine() {
+void _struct() {
     printf("Enter new line points in order \"x_start x_end y_start y_end\".\n");
     struct line line = definePoints();
     printf("X: %d,%d - Y: %d,%d\n", line.start.x, line.end.x, line.start.y, line.end.y);

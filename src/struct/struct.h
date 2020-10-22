@@ -11,7 +11,7 @@ struct line {
     struct point end;
 };
 
-void printLine();
+void _struct();
 struct line definePoints();
 struct line defineLine(int xStart, int xEnd, int yStart, int yEnd);
 
