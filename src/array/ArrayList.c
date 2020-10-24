@@ -2,7 +2,7 @@
 #include "ArrayList.h"
 
 /*
- * Checks if index is within bounds of array, exit if not.
+ * Check if index is within bounds of array, exit if not.
  */
 void boundsCheck(ArrayList this, int index) {
     if(index < 0 || index > this->size-1) {
@@ -11,7 +11,7 @@ void boundsCheck(ArrayList this, int index) {
 }
 
 ArrayList new_ArrayList() {
-    ArrayList this = (ArrayList)malloc(sizeof(struct arraylist)); // malloc sizeof(struct dog) because Dog* is a pointer reference. (gives us < 10 bytes)
+    ArrayList this = (ArrayList)malloc(sizeof(struct arraylist)); // malloc sizeof(struct arraylist) because ArrayList* is a pointer reference. (gives us < 10 bytes)
     this->size = 0;
     this->allocatedSize = 10;
     this->elements = calloc(this->allocatedSize, sizeof(int));
