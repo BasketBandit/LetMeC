@@ -2,8 +2,11 @@
 #define LETMEC_ARRAYLIST_H
 
 struct arraylist {
-    int size;
-    int allocatedSize;
+    // unsigned int for size/allocatedSize since neither values can be negative
+    // a side effect of this means you can skip casting long long in ArrayList_add();
+    // since a bitwise shift right + addition at INT_MAX is less than UINT_MAX
+    unsigned int size;
+    unsigned int allocatedSize;
     int* elements;
 };
 

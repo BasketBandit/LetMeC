@@ -25,7 +25,10 @@ int ArrayList_get(ArrayList this, int index) {
 
 void ArrayList_add(ArrayList this, int element) {
     if(this->size == this->allocatedSize && this->allocatedSize < INT_MAX) {
-        this->allocatedSize = (long long)this->allocatedSize + (long long)(this->allocatedSize >> 1) <= INT_MAX ? this->allocatedSize + (this->allocatedSize >> 1) : INT_MAX;
+        this->allocatedSize += this->allocatedSize >> 1; // shift right fine in this context since int value always positive (signing bit set to 0)
+        if(this->allocatedSize > INT_MAX) {
+            this->allocatedSize = INT_MAX;
+        }
         this->elements = realloc(this->elements, this->allocatedSize * sizeof(int));
     }
     this->elements[this->size] = element;
