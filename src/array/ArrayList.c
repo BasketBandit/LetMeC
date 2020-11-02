@@ -35,6 +35,12 @@ void ArrayList_add(ArrayList this, int element) {
     this->size++;
 }
 
+void ArrayList_addAll(ArrayList this, int* elements, int numElements) {
+    for(int i = 0; i < numElements; i++) {
+        ArrayList_add(this, elements[i]);
+    }
+}
+
 void ArrayList_set(ArrayList this, int index, int element) {
     boundsCheck(this, index);
     this->elements[index] = element;

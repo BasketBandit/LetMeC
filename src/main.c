@@ -23,6 +23,8 @@ int main() {
     for(int i = 0; i < 100; i++) {
         ArrayList_add(list, i);
     }
+    int elements[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+    ArrayList_addAll(list, elements, 10);
     ArrayList_shrink(list);
     ArrayList_set(list, 13, 1000);
     ArrayList_remove(list, 50);

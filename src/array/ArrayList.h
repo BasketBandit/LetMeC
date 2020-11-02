@@ -15,6 +15,7 @@ typedef struct arraylist *ArrayList;
 ArrayList new_ArrayList();
 int ArrayList_get(ArrayList this, int index);
 void ArrayList_add(ArrayList this, int element);
+void ArrayList_addAll(ArrayList this, int* elements, int numElements);
 void ArrayList_set(ArrayList this, int index, int element);
 void ArrayList_remove(ArrayList this, int index);
 int ArrayList_size(ArrayList this);
